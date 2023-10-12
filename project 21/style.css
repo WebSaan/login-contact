@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: newyou;
+    font-size: small;
+}
+
+@font-face {
+    font-family:newme;
+    src: url(airstrike.ttf);
+
+    font-family: newyou;
+    src: url(MASQUE__.ttf);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(212,46,213,1) 52%, rgba(29,55,150,1) 100%);
+    height: 100%;
+    width: 100%;
+}
+.part1{
+    display: grid;
+    justify-items: center;
+    left: 10px;
+    width: 100px;
+    height: 400px;
+    background-image: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+    border-radius: 8px;
+    box-shadow: 5px 3px 5px black;
+}
+.part2{
+    display:grid;
+    justify-items: center;
+    margin-left: 10px;
+    width: 400px;
+    height: 400px;
+    /* background-color: yellow; */
+    background-image: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+    border-radius: 8px;
+    box-shadow: 5px 3px 5px black;
+
+}
+.icon{
+    margin-top: 25px;
+    width: 45px;
+    height: 40px;
+    transition: 0.3s;
+}
+#int1{
+    border-radius: 10px;
+    width: 60%;
+    height: 30px;
+    transition: 0.3s;
+    background: transparent;
+}
+
+#int2{
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent;
+    transition: 0.3s;
+
+
+
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px  #0E1F40;
+}
+#int1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: -2px 5px 3px #0E1F40;
+    border: none;
+}
+
+#int2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: -2px 5px 3px #0E1F40;
+    border: none;
+}
+h1{
+    margin-top: 15px;
+    color: white;
+}
+h1 span{
+    color: grey;
+}
